@@ -10,15 +10,15 @@ var sendEmail=function sendEmail(message) {
         secureConnection: true, // 使用 SSL
         port: 465, // SMTP 端口
         auth: {
-            user: "857353825@qq.com", // 账号
-            pass: "xkdeejjiflavbcdc" // 密码
+            user: "", // 账号
+            pass: "" // 密码
         }
     }));
 
 // 设置邮件内容
     var mailOptions = {
-        from: "义疗预约小助手 <857353825@qq.com>", // 发件地址
-        to: "2510271615@qq.com", // 收件列表
+        from: "义疗预约小助手 <>", // 发件地址
+        to: "", // 收件列表
         subject: "义疗小屋", // 标题
         html: '<p>'+message.name+message.phone+message.Class+message.School+message.QQ+message.Question+'</p>'// html 内容
     }
